@@ -43,3 +43,9 @@ disp(' ');
 disp('=====================================================');
 disp('  Execucao concluida.');
 disp('=====================================================');
+
+% Mantem as figuras abertas quando o script e executado pela linha de
+% comando (ex.: "octave main.m"). Sem isso, o processo termina e fecha
+% todas as janelas. Dentro do GUI do Octave essa pausa nao atrapalha.
+input('Pressione ENTER para fechar as figuras e sair...', 's');
+close all;
